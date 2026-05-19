@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul linktree</title>
+    <!-- Cinematic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Game UI Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Pixel Art Looping Background Container -->
+    <div class="video-container">
+        <!-- 8-Bit Looping Background Layer -->
+        <div class="pixel-bg-layer" id="pixel-bg"></div>
+        <div class="video-filter"></div>
+    </div>
+
+    <!-- Cinematic Intro Screen -->
+    <div id="intro-screen">
+        <div class="crystal-core" id="start-btn">
+            <div class="core-inner"></div>
+            <div class="core-outer"></div>
+            <span class="core-icon">✦</span>
+        </div>
+        <p class="intro-text">INITIATE SEQUENCE</p>
+        <div class="blinding-flash" id="intro-flash"></div>
+    </div>
+
+    <!-- The Linktree Hub (Main Content) -->
+    <main id="linktree-hub" class="hidden">
+
+        <!-- Profile Identity -->
+        <div class="profile-section">
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <!-- Abstract avatar or logo -->
+                <div class="avatar-core"></div>
+            </div>
+            <h1 class="profile-name">GOKUL</h1>
+            <p class="profile-title">UI/UX DESIGNER/GAME DEVELOPER || Stage : Newbie</p>
+        </div>
+
+        <!-- Linktree Buttons Container -->
+        <div class="links-container">
+            <!-- Link 1 -->
+            <button class="tree-link" data-modal="modal-about">
+                <span class="link-icon"><i class="fa-solid fa-user-ninja"></i></span>
+                <span class="link-text">Identify (About Me)</span>
+                <div class="link-glow"></div>
+            </button>
+
+            <!-- Link 2 -->
+            <button class="tree-link" data-modal="modal-skills">
+                <span class="link-icon"><i class="fa-solid fa-bolt"></i></span>
+                <span class="link-text">Talents (Skills)</span>
+                <div class="link-glow"></div>
+            </button>
+
+            <!-- Link 3 -->
+            <button class="tree-link" data-modal="modal-projects">
+                <span class="link-icon"><i class="fa-solid fa-terminal"></i></span>
+                <span class="link-text">Quests (Projects)</span>
+                <div class="link-glow"></div>
+            </button>
+
+            <!-- Link 4 -->
+            <button class="tree-link" data-modal="modal-hobbies">
+                <span class="link-icon"><i class="fa-solid fa-gamepad"></i></span>
+                <span class="link-text">Echoes (Hobbies)</span>
+                <div class="link-glow"></div>
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Expanding Modals for Content (Appears over the Linktree) -->
+    <div id="modal-container" class="hidden">
+        <div class="modal-backdrop" id="modal-close-bg"></div>
+
+        <div class="modal-content glass-panel" id="modal-inner">
+            <button class="close-btn" id="modal-close-btn">✕</button>
+
+            <div class="modal-body" id="modal-about">
+                <h2>IDENTIFY // LORE</h2>
+                <p>Welcome to my centralized hub. I craft immersive worlds built on seamless logic and beautiful
+                    mechanics. As a developer, I believe in bridging the gap between visceral art and raw code.</p>
+            </div>
+
+            <div class="modal-body" id="modal-skills">
+                <h2>TALENTS // ARCHITECTURE</h2>
+                <ul class="styled-list">
+                    <li><span>✦ Engine Architecture</span> (Unity, WebGL)</li>
+                    <li><span>✦ Procedural Generation</span> (Mathematical Logic)</li>
+                    <li><span>✦ Cinematic UI/UX</span> (Advanced Animation)</li>
+                    <li><span>✦ Systems Design</span> (Scalable Mechanics)</li>
+                </ul>
+            </div>
+
+            <div class="modal-body" id="modal-projects">
+                <h2>QUESTS // RECENT ARCHIVES</h2>
+                <div class="project-box">
+                    <h3>Project Celestia</h3>
+                    <p>A proprietary graphics pipeline pushing procedural boundaries.</p>
+                </div>
+                <div class="project-box">
+                    <h3>The Abyss Protocol</h3>
+                    <p>AI-driven enemy logic system capable of adapting to player habits.</p>
+                </div>
+            </div>
+
+            <div class="modal-body" id="modal-hobbies">
+                <h2>ECHOES // ACTIVITIES</h2>
+                <p>When not compiling code, I explore storytelling across different mediums. From analyzing the fluid
+                    animation in high-end Anime, to dissecting complex game mechanics in expansive open worlds.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- GSAP for Advanced Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
